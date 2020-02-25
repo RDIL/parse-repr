@@ -1,0 +1,37 @@
+{
+  "name": "parse-repr",
+  "version": "1.0.0",
+  "description": "A lightweight Python __repr__ parser for JavaScript.",
+  "main": "index.js",
+  "repository": "https://github.com/RDIL/parse-repr.git",
+  "author": "Reece Dunham <me@rdil.rocks>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RDIL/parse-repr/issues",
+    "email": "me@rdil.rocks"
+  },
+  "keywords": [
+    "python",
+    "repr",
+    "parser",
+    "parse"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "jest": {
+    "verbose": true
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel main.js -o index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "jest": "^25.1.0"
+  }
+}
